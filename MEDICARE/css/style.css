@@ -1,0 +1,438 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+iframe {
+    width: 100%;
+    margin: 0 auto;
+    height: 563px;
+}
+html {
+    min-width: 320px;
+}
+
+/* MAIN BLOCK*/
+.header {
+    display: flex;
+    width: 100%;
+    height: 110px;
+    background-color: #e7eae8;
+    opacity: 0.8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Didact Gothic', sans-serif;
+    z-index: 9999999;
+}
+.trademark {
+    width: 232px;
+    height: 55px;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    right: 165px;
+    top: 35px;
+}
+.header_menu_a {
+    margin: 0 5px;
+}
+.menu_burger {
+    display: none;
+}
+.mobile-menu { 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    padding: 0 10px; 
+    top: 0; 
+    opacity: 1; 
+    height: 50px; 
+    z-index: 9999999;
+    position: fixed;
+    right: 10%;
+    top: 4%;
+} 
+    .mobile-menu__btn { 
+    position: fixed; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 35px; 
+    height: 30px; 
+    cursor: pointer; 
+    transition: .4s; 
+} 
+    .mobile-menu__icon { 
+    display: block; 
+    position: relative; 
+    background: #50a6b7; 
+    width: 90%; 
+    height: 4px; 
+    transition: 0.4s; 
+} 
+    .mobile-menu__icon::after, .mobile-menu__icon::before { 
+    content: ""; 
+    display: block; 
+    position: absolute; 
+    background: #50a6b7; 
+    width: 100%; 
+    height: 4px; 
+    transition: 0.4s; 
+} 
+    .mobile-menu__icon::after { 
+    top: 8px; 
+} 
+    .mobile-menu__icon::before { 
+    top: -8px; 
+} 
+    .mobile-menu__container { 
+    position: fixed; 
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content:flex-start; 
+    top: 110px; 
+    right: 1%; 
+    right: 0; 
+    z-index: 999; 
+    height: 0; 
+    opacity: 0.8; 
+    transition: 0.5s; 
+    overflow: hidden; 
+    background-color:#e7eae8; 
+} 
+    .mobile-menu__list { 
+    transition: 0.5s; 
+    list-style: none; 
+    padding-left: 10px; 
+    margin-top: 15px; 
+} 
+    .mobile-menu__item { 
+    font-size: 26px; 
+    padding-bottom: 15px; 
+} 
+    .mobile-menu__link { 
+    text-decoration: none; 
+    color:#50a6b7; 
+    font-weight:bold; 
+} 
+    .mobile-menu__checkbox { 
+    display: none; 
+}
+    .mobile-menu__checkbox:checked ~ .mobile-menu__nav { 
+    opacity: 1; 
+} 
+    .mobile-menu__checkbox:checked ~ .mobile-menu__container { 
+    height: 50%; 
+} 
+    .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon { 
+    background: transparent; 
+} 
+    .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before, .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after { 
+    top:0; 
+} 
+    .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after { 
+    transform: rotate(-45deg); 
+    -webkit-transform: rotate(-45deg); 
+} 
+    .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before { 
+    transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+}
+
+/* MAIN BLOCK*/
+.logo {
+    height: 800px;
+    overflow: hidden;
+    background:url('../images/MEDICARE_image_main_page.jpg')no-repeat center;
+    background-size: cover;
+    background-position: left;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+}
+
+/* MAIN BLOCK*/
+.content {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+    font-family: 'Julius Sans One', sans-serif;
+}
+.content a {
+    text-decoration: none;
+}
+.content_main_h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-weight: bold;
+}
+.content_main_text {
+    max-width: 830px;
+    text-align: center;
+    margin: 0 auto;
+    font: bold;
+}
+.content_main_buttoms {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.content_main_buttoms_style {
+    width: 150px;
+    height: 150px;
+    background-color: #50a6b7;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+.content_main_buttoms_style:hover {
+    transform: scale(1.1);
+    border: solid rgba(0, 0, 0, 0.11) 5px;
+    color: black;
+}
+.content_main_buttoms_style a {
+    display: inline-block;
+}
+.BS {
+    font-size: 1.8em;
+    color: #e7eae8;
+    text-align: center;
+}
+
+/* MAIN BLOCK*/
+.news {
+    max-width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.news_unit {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.news_img {
+    max-width: 300px;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+.news_text {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.news_text h4 {
+    text-align: center;
+}
+
+/* MAIN BLOCK*/
+.footer {
+    height: 260px;
+    background-color: #2c2924;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+}
+.footer_content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 35px;
+}
+.footer_colum {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+}
+.footer_colum h3 {
+    text-align: center;
+}
+.footer_colum a {
+    text-align: left;
+}
+.footer a {
+    color: #cecece;
+   }
+.footer a:visited {
+    color: #cecece;
+   }
+.footer a:active {
+    color: white;
+   }
+.footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+.footer img {
+    transition: transform 0.5s;
+}
+.footer img:hover {
+    transform: scale(1.1);
+}
+
+/*PAGE 02 ABOUT*/
+.content_about_text {
+    max-width: 1000px;
+    text-align: justify;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.content_about_photo {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.content_about_text h5 {
+    text-align: center;
+    font-weight: bold;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/*PAGE 03 CATALOG*/
+.content_catalog_unit {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.content_catalog_unit_photo {
+    width: 30%;
+}
+.content_catalog_unit_text {
+    width: 70%;
+}
+.content_catalog_unit_text h5 {
+    text-align: center;
+}
+.content_catalog_navi {
+    position: fixed;
+    bottom: 80px;
+    left: 1px;
+    background-color: #e7eae8;
+    opacity: 0.7;
+    font-weight: bold;
+    line-height: 0.5;
+}
+.content_catalog_navi a {
+    color: black !important;
+}
+.content_catalog_navi h5 {
+    text-align: center;
+    padding: 10px;
+}
+
+/*PAGE 04 PROCEDYRI*/
+.content_procedyri {
+    padding-bottom: 20px;
+}
+.content_procedyri_photo {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.content_procedyri_video {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*PAGE 05 SEMENARY*/
+.content_semenary_text {
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.every_semenar {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.every_semenar h3 {
+    color: #50a6b7;
+    font-weight: bold;
+}
+
+/*PAGE 06 CONTACTS*/
+.content_contacts_text {
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content_contacts_text p {
+    margin: 0;
+}
+.map {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 1024px) {
+    .logo {
+    display: none;
+    }
+    .content {
+    padding-top: 110px;
+    }
+    .menu {
+        display: none;
+    }
+    .footer_colum {
+        display: none;
+    }
+    .footer {
+        height: auto;
+    }
+    .footer_content {
+        padding: 10px;
+    }
+    .vidoe_you {
+        max-width: 600px;
+        height: 300px;
+    }
+    iframe {
+        max-width: 100%;
+        margin: 0 auto;
+        height: 400px;
+    }
+    .content_procedyri {
+        padding-bottom: 0;
+    }
+    .menu_burger {
+        display: block;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .footer {
+       display: none;
+    }
+   .news_img {
+       display: none;
+    }
+   .content_main_buttoms {
+        display: none;
+    }
+   .content_about_photo {
+        display: none;
+    }
+   .map {
+        display: none;
+    }
+   iframe {
+       height: 240px;
+    }
+}
